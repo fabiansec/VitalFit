@@ -1,0 +1,49 @@
+RewriteEngine on
+
+
+
+#sin parametros 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^(\w+)/(\w+)/?$ index.php?co=$1&ac=$2&%1
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^(\w+)/?$ index.php?co=$1&%1 
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^/?$ index.php?%1
+
+
+
+#con parametros
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^(\w+)/(\w+)/(.+)$ index.php?co=$1&ac=$2&$3&%1
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^(\w+)/([^\.]+)$ index.php?co=$1&$2&%1 
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{QUERY_STRING} ^(.*)$ [OR]
+RewriteCond %{QUERY_STRING} ^$ 
+RewriteRule ^/([^\.]+)$ index.php?$1&%1
+
+#RewriteRule ^/(.*)$ index.php?$1
+

@@ -1,0 +1,1071 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sport;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgba(14, 43, 51, 0.9);
+    color: #333;
+    margin: 0;
+
+}
+
+#todo {
+    margin: 0 auto;
+    box-shadow: 0 0 10px black;
+
+}
+
+header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 36, 48, 1) 12%, rgba(47, 119, 82, 1) 48%, rgba(13, 36, 48, 1) 92%);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+
+#barraLocalizacion {
+    border-left: 3px ridge #ccc;
+    border-right: 3px ridge #ccc;
+}
+
+#barraLocalizacion {
+    background-color: #e7effc;
+}
+
+
+header .logo {
+
+    padding-left: 5px;
+}
+
+header .logo img {
+    width: 120px;
+    height: 120px;
+}
+
+header .titulo {
+    padding-left: 5px;
+    display: flex;
+}
+
+#barraLogin {
+    height: 60px;
+
+}
+
+#barraLogin a {
+    text-decoration: none;
+}
+
+#barraLogin a:active,
+#barraLogin a:focus,
+#barraLogin a:visited {
+    text-decoration: none;
+}
+
+header .titulo a,
+header .titulo a:hover,
+header .titulo a:visited {
+    text-decoration: none;
+    color: #2ED785;
+}
+
+header .titulo a h1 {
+    text-shadow: 0px 0px 7px #4a2f02;
+    font-family: "Oswald", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+footer {
+    background-color: #192b33;
+    padding: 20px;
+
+}
+
+footer h2 {
+    color: #2ED785;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contenido {
+    background: #122F35;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.barraUbi {
+    background: #0E2B33;
+    padding: 10px;
+    color: white;
+}
+
+.barraUbi a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barraMenu {
+    background: rgba(14, 43, 51, 0.9);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.barraMenu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid transparent;
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.barraMenu a {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.barraMenu a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.barraMenu a:hover {
+    color: white;
+}
+
+.barraMenu a:hover::before {
+    transform: scaleX(1);
+}
+
+
+.barraLogin {
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    background-color: #122F35;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+}
+
+.barraLogin button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(124, 187, 155);
+}
+
+.barraLogin a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.barraLogin span {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.barraLogin form {
+    margin-top: 30px;
+}
+
+.eslogan {
+    text-align: center;
+    padding: 20px;
+    /* Ajusta el relleno según sea necesario */
+    background-color: #0E2B33;
+    /* Color de fondo del div del eslogan */
+    transition: background-color 0.3s ease-in-out;
+    /* Transición suave del color de fondo */
+    position: relative;
+    box-shadow: 0 0 10px rgba(18, 37, 53, 3);
+    /* Borde difuminado */
+
+}
+
+.eslogan h2 {
+    color: white;
+    /* Color del texto del eslogan */
+    font-family: "Oswald", sans-serif;
+    /* Ajusta la fuente según sea necesario */
+    font-size: 24px;
+    /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.parrafo {
+    margin-left: 30px;
+    color: white;
+}
+
+aside {
+    background: #e1dfff;
+    margin: 5px;
+    width: 100px;
+    border: solid thin black;
+    border-radius: 5px;
+    flex: 1 1 20%;
+    padding: 20px;
+    height: 400px;
+}
+
+article {
+    margin: 5px;
+    flex: 1 1 80%;
+
+}
+
+.presentacion {
+    background-color: rgb(233, 223, 179);
+    border-radius: 15px;
+    text-align: center;
+    padding: 59px;
+    width: 40%;
+    margin: 15px;
+    margin-left: 25%;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+aside>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+aside ul li {
+    flex: 1 1;
+    text-decoration: none;
+    list-style-type: none;
+    transition: font-size 0.7s;
+    color: #092e4e;
+}
+
+aside ul li:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+aside li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    text-align: center;
+    line-height: 40px;
+}
+
+aside li a:hover {
+    text-decoration: none;
+    color: #092e4e;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+aside li a:active,
+aside li a:focus,
+aside li a:visited {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#descargar{
+    margin-left: 2%;
+}
+.div.flotante {
+    float: left;
+    min-width: 300px;
+    border: 1px solid #999999;
+    margin: 3px;
+    padding: 5px;
+}
+
+
+
+#logo_pag_error {
+    width: 50px;
+    height: 50px;
+}
+
+#mensaje_pag_error {
+    font-size: x-large;
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+
+}
+
+article div.par {
+    background-color: #52e0cb;
+    color: black;
+}
+
+article div.impar {
+    background-color: blue;
+    color: white;
+}
+
+.pager {
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    color: white;
+    padding: 10px;
+
+
+}
+
+.pager .izq {
+    float: left;
+    padding-left: 5px;
+    color: white;
+}
+
+.pager .der {
+    float: right;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.pager .der a {
+    text-decoration: none;
+    color: rgb(127, 160, 127);
+}
+
+.pager .der a:hover {
+    text-decoration: none;
+    color: rgb(174, 222, 174);
+}
+
+.pager .final {
+    clear: both;
+}
+
+/* Estilos mejorados para la tabla */
+
+/* Contenedor de la tabla */
+div.tabla1 {
+    width: 100%;
+    overflow: auto;
+    margin-top: 3%;
+
+}
+
+/* Estilos generales de la tabla */
+div.tabla table {
+    margin-top: 3%;
+    width: 80%; /* Se redujo el ancho de la tabla */
+    margin: 0 auto; /* Centra la tabla en el contenedor */
+    border-collapse: collapse;
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    margin-bottom: 10px; /* Se redujo el espacio entre la tabla y otros elementos */
+}
+
+/* Estilos para las celdas de encabezado (th) */
+div.tabla th {
+    background-color: #1a3953;
+    color: white;
+    padding: 8px; /* Se redujo el padding */
+}
+
+/* Estilos alternados para filas pares e impares */
+div.tabla tr:nth-child(even) {
+    background-color: #294f58;
+}
+
+div.tabla tr:nth-child(odd) {
+    background-color: #1e3a45;
+}
+
+/* Estilos para celdas de datos (td) */
+div.tabla td {
+    padding: 6px; /* Se redujo el padding */
+    color: white;
+}
+
+/* Estilos para la tabla con clase tabla1 */
+table.tabla1 {
+    width: 80%; /* Se redujo el ancho de la tabla */
+    margin: 0 auto; /* Centra la tabla en el contenedor */
+    border-collapse: collapse;
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    margin-bottom: 10px; /* Se redujo el espacio entre la tabla y otros elementos */
+}
+
+/* Estilos para celdas de encabezado (th) en tabla1 */
+table.tabla1 th {
+    background-color: #1a3953;
+    color: white;
+    padding: 8px; /* Se redujo el padding */
+}
+
+/* Estilos alternados para filas pares e impares en tabla1 */
+table.tabla1 tr:nth-child(even) {
+    background-color: #294f58;
+}
+
+table.tabla1 tr:nth-child(odd) {
+    background-color: #1e3a45;
+}
+
+/* Estilos para celdas de datos (td) en tabla1 */
+table.tabla1 td {
+    padding: 6px; /* Se redujo el padding */
+    color: white;
+}
+
+/* Definiciones de estilo para el objeto CCaja con estilo propio */
+.caja {
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    /* Ajusta el ancho de la caja según sea necesario */
+    margin: 0 auto;
+    /* Centra la caja en la pantalla */
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.caja h1 {
+    background-color: #25464d;
+    padding: 3px;
+    font-family: "Oswald", sans-serif;
+    color: white;
+
+}
+
+.caja #cuerpo form fieldset legend,
+label {
+    padding: 3px;
+    color: white;
+    background-color: #25464d;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.caja button {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #466757;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+.cimg {
+    color: rgb(245, 104, 69);
+    background-color: #cfdfee;
+    border: 2px solid black;
+}
+
+.cimg .cimg_tit {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+}
+
+/* Imágenes */
+.misFotos {
+    width: 100%;
+    height: auto;
+}
+
+
+.enlaces {
+    text-decoration: none;
+    background: linear-gradient(to right, #ad8a49, #7567db);
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+}
+
+#productos {
+    width: 90px;
+    box-shadow: 0 0 10px black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#productos:hover {
+    transform: scale(1.3);
+}
+
+.login {
+    font-family: "Oswald", sans-serif;
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login button {
+    background-color: #1e3c41;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #183237;
+}
+
+/* Estilos generales */
+.actividades {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.card {
+    float: left;
+    height: 330px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    position: relative;
+}
+
+
+.card input{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #2ED785;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2e5240;
+    color: #2ED785;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    animation: parpadeo 1.5s infinite;
+    /* Animación de parpadeo */
+}
+
+@keyframes parpadeo {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.card p {
+    font-size: 20px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.imgTabla{
+    max-width: 100%;
+    max-height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.datos p {
+    color: white;
+    background-color: #122F35;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    border: 1px solid #555;
+    padding: 5px;
+    width: 10%;
+    margin-top: 1%;
+}
+
+.datos h3 {
+    color: white;
+    background-color: #4a6166;
+    border-radius: 10pc;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+.datos form{
+    margin-top: 2%;
+}
+.datos form label{
+    color: white;
+    background-color: #4a6166;
+    border-radius: 10pc;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+.datos form input {
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    border: 1px solid #555;
+    width: 10%;
+    margin-top: 1%;
+}
+
+.opciones {
+    background-color: #29454b;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    color: #ffffff; /* Cambia el color del texto según tus preferencias */
+    padding: 10px 15px; /* Ajusta el relleno según tus preferencias */
+    text-decoration: none; /* Elimina el subrayado del enlace si lo deseas */
+    border: none; /* Elimina el borde del botón si lo deseas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas según tus preferencias */
+    margin-bottom: 2%;
+}
+
+.opciones:hover {
+    background-color: #0A1E22; /* Cambia el color al pasar el mouse sobre el botón */
+}
+
+.error  {
+    border: red thin solid;
+    background-color: #ffb1c7;
+    color: red;
+    display: inline;
+}
+
+.reserva {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reservas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+}
+
+.reservas p {
+    color: white;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.reserva p {
+    background-color: #25464d;
+    color: white;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.reserva input[type="submit"] {
+    background-color: #25464d;
+    box-shadow: 0px 0px 10px rgb(139, 168, 153);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Estilos base para .divP */
+.divP {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/* Estilos para los párrafos dentro de .divP */
+.divP p {
+    margin: 2%;
+    position: relative;
+    padding: 20px;
+    line-height: 1.5; 
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px gray;
+    z-index: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilos para el elemento small dentro de .divP (como fondo) */
+.divP p small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del .divP con opacidad */
+    box-sizing: border-box;
+    font-size: 2em;
+    z-index: -1; /* Colócalo detrás del párrafo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+#ayuda{
+
+    position: relative;
+    left: 90%;
+}
+
+.videoC{
+    display: flex;
+    justify-content: space-around;
+}
+#video{
+    justify-content: stretch;
+    align-items: stretch;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(139, 168, 153);
+
+}
+
+
+
+/*****************************************************************************************/
+/* Mobile */
+@media only screen and (max-width: 600px) {
+
+    #video,.videoC{
+        display: none;
+    }
+
+    .datos p {
+        width: 100%;
+    }
+
+    .datos h3 {
+        width: 100%;
+        margin-bottom: 5px; /* Añadido un pequeño espacio inferior */
+    }
+
+    div.tabla table,  td, tr {
+        text-align: center;
+        display: block;
+    }
+    table.tabla1 th,th{
+        display: none;
+    }
+    #todo {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header .titulo {
+        padding-left: 5px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .titulo a h1 {
+        font-size: 40px;
+        
+    }
+
+    #barraLogin {
+        order: 1;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    aside,
+    article {
+        width: 100%;
+    }
+
+    .presentacion {
+        width: 80%;
+        margin-left: 10%;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .barraMenu {
+        flex-direction: column;
+        width: 35%;
+        height: 100%;
+    }
+
+    .barraLogin {
+        padding: 10px;
+    }
+
+    .barraUbi {
+        border-top: 1px solid white;
+        color: white;
+    }
+
+    .eslogan h2 {
+        font-size: 15px;
+    }
+
+    .actividades {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permitir el ajuste de múltiples filas */
+        width: 100%;
+        gap: 0;
+    }
+
+  
+
+    .card {
+        width: 100%;
+        /* Ancho total de la pantalla con margen */
+        max-width: 300px;
+        /* Ancho máximo para mantener cierta legibilidad */
+        margin: 10px;
+        /* Espaciado entre tarjetas */
+    }
+
+    .caja {
+        width: 100%;
+        /* Ajusta al 100% del ancho de la pantalla */
+    }
+
+    .pager {
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Centra los elementos horizontalmente */
+    }
+
+    .pager .izq,
+    .pager .der {
+        width: 100%; /* Ocupar el 100% del ancho en dispositivos móviles */
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-bottom: 10px; /* Agregar espacio entre los elementos */
+    }
+
+    .pager .der {
+        order: -1; /* Cambia el orden para moverlo a la derecha */
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .divP {
+        padding: 10px;
+    }
+
+    .divP p {
+        font-size: 1.2em;
+        font-family: "Oswald", sans-serif;
+
+    }
+
+    .divP p small {
+        font-size: 1.5em;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    th:nth-child(3), td:nth-child(3),
+    th:nth-child(5), td:nth-child(5),
+    th:nth-child(7), td:nth-child(7),
+    th:nth-child(10), td:nth-child(10) {
+        text-align: center;
+        display: none;
+    }
+
+    header .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header .titulo a h1 {
+        font-size: 60px;
+    }
+
+    .contenido {
+        flex-direction: row;
+    }
+
+    header .titulo {
+        flex-direction: row;
+        /* Restore to row layout */
+    }
+
+    #barraLogin {
+        order: 2;
+        /* Change the order to move it below the title */
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+    }
+
+    article {
+        width: 70%;
+    }
+
+    .presentacion {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .barraMenu {
+        flex-direction: row;
+    }
+
+    .barraLogin {
+        padding: 15px;
+    }
+
+    .card {
+        width: calc(50% - 40px);
+        /* Dos tarjetas por fila con margen de 20px */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .divP {
+        padding: 15px;
+    }
+
+    .divP p {
+        font-size: 1.3em;
+        font-family: "Oswald", sans-serif;
+
+    }
+
+    .divP p small {
+        font-size: 1.8em;
+    }
+}
